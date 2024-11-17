@@ -1,0 +1,71 @@
+{
+    "eventTypes": [
+        {
+            "id": "1",
+            "title": "Meeting with an expert",
+            "color": "#FF4E6B"
+        },
+        {
+            "id": "2",
+            "title": "Question-answer",
+            "color": "#00CC66"
+        },
+        {
+            "id": "3",
+            "title": "Conference",
+            "color": "#FFBB33"
+        },
+        {
+            "id": "4",
+            "title": "Webinar",
+            "color": "#4DB4FF"
+        }
+    ],
+    "events": [
+        {
+            "id": "1",
+            "eventTypeId": "1",
+            "title": "Event title",
+            "description": "Event description",
+            "date": "2024-11-17",
+            "location": "Some location",
+            "time": "19:00"
+        },
+        {
+            "id": "2",
+            "eventTypeId": "2",
+            "title": "Event title 2",
+            "description": "Event description 2",
+            "date": "2024-11-17",
+            "location": "Some location",
+            "time": "19:00"
+        },
+        {
+            "id": "3",
+            "eventTypeId": "3",
+            "title": "Event title",
+            "description": "Event description",
+            "date": "2024-11-17",
+            "location": "Some location",
+            "time": "19:00"
+        },
+        {
+            "id": "4",
+            "eventTypeId": "4",
+            "title": "Event title",
+            "description": "Event description",
+            "date": "2024-11-17",
+            "location": "Some location",
+            "time": "19:00"
+        },
+        {
+            "id": "5",
+            "eventTypeId": "4",
+            "title": "Event title",
+            "description": "Event description",
+            "date": "2024-11-17",
+            "location": "Some location",
+            "time": "19:00"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+html {
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.5;
+    color: $colorText;
+    background: $colorBackground;
+}
+
+a {
+    font-family: "Lexend", sans-serif;
+    color: $colorLink;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+        color: $colorLinkHighlight;
+    }
+}
+
+button, input, select {
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 200;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+input, select {
+    color: $colorFieldText;
+    background: $colorFieldBackground;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1170px;
+}

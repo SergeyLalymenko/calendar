@@ -1,0 +1,17 @@
+.modal {
+
+    &__wrapper {
+
+        &.sm {
+            max-width: 520px;
+        }
+
+        &.md {
+            max-width: 920px;
+        }
+
+        &.xl {
+            max-width: 1120px;
+        }
+    }
+}

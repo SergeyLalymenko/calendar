@@ -1,0 +1,47 @@
+@import '@/styles/variables.scss';
+
+.button {
+
+    &.sm {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    
+    &.md {
+        padding: 16px 24px;
+        font-size: 1.25rem;
+    }
+
+    &.xl {
+        padding: 20px 28px;
+        font-size: 1.25rem;
+    }
+    
+    &.primary {
+        background: $colorActive;
+        color: $colorText;
+
+        &:hover {
+            background: $colorActiveHighlight;
+        }
+    }
+
+    &.secondary {
+        border: 1px solid $colorBorder;
+        color: $colorText;
+
+        &:hover {
+            border-color: $colorActive;
+        }
+    }
+
+    &.danger {
+        border: none;
+        background: $colorDanger;
+        color: $colorText;
+
+        &:hover {
+            background: $colorDangerActive;
+        }
+    }
+}
