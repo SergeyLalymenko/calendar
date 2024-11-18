@@ -14,7 +14,7 @@ function Button({ config: propsConfig = {}, additionalClasses = '', onClickActio
 
     return (
         <button
-            className={classNames([config.size, config.visualType], "button rounded bg-none border-none transition-colors duration-200 cursor-pointer", [additionalClasses])}
+            className={classNames([config.size, config.visualType], "button", [additionalClasses])}
             type={config.type}
             onClick={onClickAction}
         >

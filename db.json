@@ -66,6 +66,15 @@
             "date": "2024-11-17",
             "location": "Some location",
             "time": "19:00"
+        },
+        {
+            "id": "6",
+            "eventTypeId": "4",
+            "title": "Event title",
+            "description": "Event description",
+            "date": "2025-01-01",
+            "location": "Some location",
+            "time": "19:00"
         }
     ]
 }

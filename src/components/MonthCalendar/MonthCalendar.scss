@@ -1,5 +1,9 @@
 @import '@/styles/variables.scss';
 
+:root {
+    --rt-opacity: 1;
+}
+
 .month-calendar {
     position: relative;
     padding: 20px 10px;
@@ -54,6 +58,12 @@
             align-items: center;
             justify-content: center;
             padding: 8px 0;
+            pointer-events: none;
+
+            &.has-events {
+                pointer-events: all;
+                cursor: pointer;
+            }
 
             &-text {
                 text-align: center;
@@ -78,6 +88,117 @@
                 height: 6px;
                 border-radius: 50%;
             }
+        }
+    }
+
+    #event-tooltip {
+        padding: 0;
+
+        &.core-styles-module_show__Nt9eE {
+            opacity: 1;
+        }
+
+        .react-tooltip-arrow {
+            background: $colorTextSecondary;
+        }
+    }
+
+    .event-tooltip {
+        display: flex;
+        flex-direction: column;
+        background: $colorTextSecondary;
+        width: 360px;
+        padding: 30px 24px 20px;
+
+        &__title {
+            font-size: 2rem;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            max-height: 300px;
+            overflow: auto;
+            border-top: 1px solid rgba($colorPrimary, .16);
+
+            &::-webkit-scrollbar {
+                width: 13px;
+            }
+
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 3px 3px #FFF;
+                border-radius: 3px;
+                border-left: solid 10px transparent;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                box-shadow: inset 0 0 3px 3px $colorPrimary;
+                border-radius: 3px;
+                border-left: solid 10px transparent;
+            }
+        }
+
+        &__item {
+            padding-top: 20px;
+            border-top: 1px solid rgba($colorPrimary, .16);
+
+            &:first-child {
+                border-top: none;
+            }
+
+            &-head {
+                display: flex;
+                justify-content: space-between;
+                gap: 8px;
+            }
+
+            &-title {
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+
+            &-edit {
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            &-description {
+                margin-top: 8px;
+                font-size: 0.875rem;
+            }
+
+            &-location {
+                margin-top: 8px;
+                font-weight: 400;
+                color: #797979;
+            }
+
+            &-footer {
+                margin: 8px 0 20px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 8px;
+            }
+
+            &-event-type {
+                padding: 4px 8px;
+                border-radius: 8px;
+                font-size: 0.875rem;
+                font-weight: 400;
+                line-height: 1;
+                text-align: center;
+            }
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 20px;
+            border-top: 1px solid rgba($colorPrimary, .16);
         }
     }
 }

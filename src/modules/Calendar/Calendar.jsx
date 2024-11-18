@@ -157,6 +157,7 @@ function Calendar() {
                                 monthName={monthName}
                                 dates={dates}
                                 eventTypes={eventTypes}
+                                getFormattedDay={getFormattedDay}
                                 key={i}
                             />
                         ))
